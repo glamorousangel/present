@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cover {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    height: 100vh;
+}
+  
+.left-content {
+    display: flex;
+    flex-direction: column; 
+}
+  
+h1 {
+    font-size: 95px;
+    margin-left: 60px;
+    margin-top: 90px;
+    color: aliceblue;
+}
+  
+p {
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 110px;
+    color: aliceblue;
+}
+
+.cta {
+    position: relative;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 25%;
+    margin-right: 13%;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+   
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+   
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+   
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+   
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+   
+.cta:hover svg {
+    transform: translateX(0);
+}
+   
+.cta:active {
+    transform: scale(0.95);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    h1 {
+      font-size: 60px; 
+      margin-top: 40px;
+      margin-left: 0%;
+      text-align: center; 
+    }
+  
+    p {
+      font-size: 14px; 
+      margin-top: 10px;
+      margin-left: 0%;
+      text-align: center; 
+    }
+  
+    .cta {
+      margin: auto;
+    }
+}
+  
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h1 {
+      font-size: 80px;
+      margin-left: 30px;
+      margin-top: 70px;
+      text-align: left;
+    }
+  
+    p {
+      font-size: 12px;
+      margin-left: 30px;
+      margin-top: 10px;
+      text-align: left;
+    }
+  
+    .cta {
+      margin: 20px 0 0 20px;
+    }
+}
+ 
+  
+  
+  
+  
+  
